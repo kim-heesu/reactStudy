@@ -1,3 +1,5 @@
+import "./Main.css";
+
 const Main = () => {
   const user = {
     name:"김희수",
@@ -6,7 +8,7 @@ const Main = () => {
     return (
       <>
         {user.isLogin ? (
-          <div>로그아웃</div>
+          <div className="logout">로그아웃</div>
         ) : (
           <div> 로그인</div>
         )}
